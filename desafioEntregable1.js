@@ -1,8 +1,8 @@
 class ProductManager {
+    static nuevoId = 0;
 
     constructor() {
         this.products = []
-        this.nuevoId = 0;
 
 
     }
@@ -25,7 +25,7 @@ class ProductManager {
         } else {
 
             const producto = {
-                id: this.nuevoId++,
+                id: ++ProductManager.nuevoId,
                 title,
                 description,
                 price,
@@ -53,7 +53,7 @@ class ProductManager {
         if (!productoIdValidar) {
             console.log(`"Not found", el ID ${id} de producto no existe`);
         } else {
-            console.log(`El producto con el ID ${id} fue encontrado`);
+            console.log(`El producto con el ID ${id} fue encontrado.`);
         } return productoIdValidar;
 
     };
@@ -77,6 +77,11 @@ producto.getProducts();
 // stock:25
 // El objeto debe agregarse satisfactoriamente con un id generado automáticamente SIN REPETIRSE
 producto.addProduct('Producto prueba', 'Este es un producto prueba', 200, 'Sin imagen', 'abc123', 25);
+producto.addProduct('Producto prueba2', 'Este es un producto prueba', 200, 'Sin imagen', 'abc1234', 25);
+// producto.addProduct('Producto prueba3', 'Este es un producto prueba', 200, 'Sin imagen', 'abc12345', 25);
+producto.addProduct('Producto prueba4', 'Este es un producto prueba', 200, 'Sin imagen', 'abc123456', 25);
+
+
 
 // -----------------------------* Proceso de testing *----------------------------
 // Se llamará el método “getProducts” nuevamente, esta vez debe aparecer el producto recién agregado
@@ -88,5 +93,5 @@ producto.addProduct('Producto prueba', 'Este es un producto prueba', 200, 'Sin i
 
 // -----------------------------* Proceso de testing *----------------------------
 // Se evaluará que getProductById devuelva error si no encuentra el producto o el producto en caso de encontrarlo
-producto.getProductById(0);
+producto.getProductById(2);
 

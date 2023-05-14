@@ -15,7 +15,7 @@ class ProductManager {
         const productoExiste = this.products.find((producto) => producto.code === code)
 
         if (productoExiste) {
-            console.log(`El producto ${producto.title} existe, no debes ingresarlo`);
+            console.log(`El producto ${productoExiste.title} existe, no debes ingresarlo`);
             return
         }
 

@@ -76,20 +76,21 @@ producto.getProducts();
 // code:”abc123”,
 // stock:25
 // El objeto debe agregarse satisfactoriamente con un id generado automáticamente SIN REPETIRSE
-producto.addProduct('Producto prueba', 'Este es un producto prueba', 200, 'Sin imagen', 'abc123', 25);
-producto.addProduct('Producto prueba2', 'Este es un producto prueba', 200, 'Sin imagen', 'abc1234', 25);
+// producto.addProduct('Producto prueba', 'Este es un producto prueba', 200, 'Sin imagen', 'abc123', 25);
+// producto.addProduct('Producto prueba2', 'Este es un producto prueba', 200, 'Sin imagen', 'abc1234', 25);
+
 // producto.addProduct('Producto prueba3', 'Este es un producto prueba', 200, 'Sin imagen', 'abc12345', 25);
-producto.addProduct('Producto prueba4', 'Este es un producto prueba', 200, 'Sin imagen', 'abc123456', 25);
+// producto.addProduct('Producto prueba4', 'Este es un producto prueba', 200, 'Sin imagen', 'abc123456', 25);
 
 
 
-// -----------------------------* Proceso de testing *----------------------------
-// Se llamará el método “getProducts” nuevamente, esta vez debe aparecer el producto recién agregado
-producto.getProducts();
+// // -----------------------------* Proceso de testing *----------------------------
+// // Se llamará el método “getProducts” nuevamente, esta vez debe aparecer el producto recién agregado
+// producto.getProducts();
 
-// -----------------------------* Proceso de testing *----------------------------
-// Se llamará al método “addProduct” con los mismos campos de arriba, debe arrojar un error porque el código estará repetido.
-producto.addProduct('Producto prueba', 'Este es un producto prueba', 200, 'Sin imagen', 'abc123', 25);
+// // -----------------------------* Proceso de testing *----------------------------
+// // Se llamará al método “addProduct” con los mismos campos de arriba, debe arrojar un error porque el código estará repetido.
+// producto.addProduct('Producto prueba', 'Este es un producto prueba', 200, 'Sin imagen', 'abc123', 25);
 
 // -----------------------------* Proceso de testing *----------------------------
 // Se evaluará que getProductById devuelva error si no encuentra el producto o el producto en caso de encontrarlo

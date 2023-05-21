@@ -1,0 +1,23 @@
+{
+  
+  "type": "module",
+  "name": "desafios-entregables-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "desafioEntregable1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FedericoSannazzaro/desafiosCoderHouseBackend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FedericoSannazzaro/desafiosCoderHouseBackend/issues"
+  },
+  "homepage": "https://github.com/FedericoSannazzaro/desafiosCoderHouseBackend#readme"
+
+}
